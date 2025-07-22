@@ -114,9 +114,9 @@
 </head>
 <body>
   <header>
-<div style="display: flex; align-items: center;">
-  <img src="logo.png" alt="Logo CIS & VOUS" style="height: 120px;">
-</div>
+    <div style="display: flex; align-items: center;">
+      <img src="logo.png" alt="Logo CIS & VOUS" style="height: 120px;">
+    </div>
     <nav>
       <a href="#services">Services</a>
       <a href="#about">À propos</a>
@@ -157,8 +157,11 @@
 
   <section id="contact" class="contact">
     <h3>Contact</h3>
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci.html">
       <input type="hidden" name="form-name" value="contact" />
+      <p style="display:none;">
+        <label>Ne pas remplir ce champ : <input name="bot-field" /></label>
+      </p>
       <input type="text" name="nom" placeholder="Votre nom" required />
       <input type="email" name="email" placeholder="Votre adresse e-mail" required />
       <textarea name="message" rows="6" placeholder="Votre message..." required></textarea>
