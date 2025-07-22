@@ -1,0 +1,183 @@
+
+
+Aller au contenu
+Utiliser Gmail avec un lecteur d'écran
+Activez les notifications sur le bureau pour Gmail.
+   OK  Non, merci
+Conversations
+20 % sur 15 Go utilisés
+Conditions d'utilisation · Confidentialité · Règlement du programme
+Dernière activité sur le compte : il y a 0 minute
+Ce compte est ouvert depuis 2 autres emplacements. · Détails
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CIS & VOUS - Conciergerie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0c1f7a9.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --main-bg: #f9f5ef;
+      --text-dark: #222;
+      --accent: #bfa26b;
+      --accent-dark: #a68a50;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;
+    }
+    body {
+      background: var(--main-bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+    header {
+      background: #fff;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--accent);
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+    section.hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: #fff;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      color: var(--accent-dark);
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .hero button {
+      padding: 0.8rem 2rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .hero button:hover {
+      background: var(--accent-dark);
+    }
+    section {
+      padding: 4rem 2rem;
+    }
+    .services, .about, .contact {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+    .service-item {
+      margin-bottom: 1.5rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    form button:hover {
+      background: var(--accent-dark);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CIS & VOUS</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Votre sérénité, notre priorité</h2>
+    <p>Conciergerie haut de gamme pour vos biens en location ou résidence secondaire.</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Demander un devis</button>
+  </section>
+
+  <section id="services" class="services">
+    <h3>Nos Services</h3>
+    <div class="service-item">
+      <strong>Check-in / Check-out</strong>
+      <p>Accueil et départ des locataires, remise des clés, état des lieux.</p>
+    </div>
+    <div class="service-item">
+      <strong>Ménage professionnel</strong>
+      <p>Nettoyage complet entre chaque location.</p>
+    </div>
+    <div class="service-item">
+      <strong>Gestion linge</strong>
+      <p>Entretien du linge de maison et réassort.</p>
+    </div>
+    <div class="service-item">
+      <strong>Surveillance de logement</strong>
+      <p>Vérifications régulières, rapport au propriétaire.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h3>À propos</h3>
+    <p>CIS & VOUS est une conciergerie indépendante qui propose un service sur mesure, personnalisé, et discret pour les propriétaires exigeants. Nous plaçons la satisfaction et la tranquillité de nos clients au cœur de nos priorités.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Contact</h3>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre adresse e-mail" required>
+      <textarea name="message" rows="6" placeholder="Votre message..." required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 CIS & VOUS. Tous droits réservés.
+  </footer>
+</body>
+</html>
+cis_et_vous_site.html
+Affichage de cis_et_vous_site.html en cours...
